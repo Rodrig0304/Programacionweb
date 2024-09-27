@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Programación web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="introduccion.html">Introducción</a>
+                </li>
+                <!-- Dropdown para "Temas" -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="2.2.html">2.2 Estructura de un documento</a></li>
+                        <li><a class="dropdown-item" href="2.3.html">2.3 Elementos básicos</a></li>
+                        <li><a class="dropdown-item" href="2.4.html">2.4 Formularios</a></li>
+                        <li><a class="dropdown-item" href="2.5.html">2.5 Lenguajes de presentación en documentos Web</a></li>
+                        <li><a class="dropdown-item" href="2.6.html">2.6 Selectores</a></li>
+                        <li><a class="dropdown-item" href="2.7.html">2.7 Metodología</a></li>
+                        <!-- Divider para separar secciones dentro del dropdown -->
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="HTML.html">HTML</a></li>
+                        <li><a class="dropdown-item" href="CSS.html">CSS</a></li>
+                        <li><a class="dropdown-item" href="JS.html">JS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="glosario.html">Glosario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="frameworks.html">Frameworks y Herramientas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="container mt-3">
+  
+
+    <h1 class="text-center">2.2 Estructura global de un documento web</h1>
+    <img src="Imagenes/base.png" class="img-fluid" alt="Estructura de una pagina web">
+    <p>
+        La estructura de un documento web se basa en varios componentes esenciales que trabajan en conjunto para crear una página funcional y accesible.
+    </p>
+    
+    <h2>1. Declaración del tipo de documento (DOCTYPE)</h2>
+    <p>
+        La declaración <code>&lt;!DOCTYPE html&gt;</code> al inicio del documento indica al navegador que se está utilizando HTML5. Esto es crucial para asegurar que el navegador renderice la página de acuerdo con las normas de HTML5.
+    </p>
+
+    <h2>2. Elemento &lt;html&gt;</h2>
+    <p>
+        Este elemento es el contenedor principal de todo el contenido del documento. La etiqueta se puede acompañar con un atributo <code>lang</code> para especificar el idioma, como en <code>&lt;html lang="es"&gt;</code>.
+    </p>
+
+    <h2>3. Elemento &lt;head&gt;</h2>
+    <p>
+        Incluye metadatos y enlaces a recursos externos, como hojas de estilo (CSS) y scripts de JavaScript. A continuación, se describen algunos elementos comunes dentro de <code>&lt;head&gt;</code>:
+    </p>
+    <ul>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code>: Define la codificación de caracteres.</li>
+        <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Controla el diseño responsivo en dispositivos móviles.</li>
+        <li><code>&lt;link rel="stylesheet" href="estilo.css"&gt;</code>: Vincula un archivo CSS externo para el estilo de la página.</li>
+    </ul>
+
+    <h2>4. Elemento &lt;body&gt;</h2>
+    <p>
+        Contiene el contenido visible de la página, como encabezados, párrafos, listas e imágenes. Aquí es donde se desarrolla la mayor parte de la estructura de la página web.
+    </p>
+
+    <h2>5. Uso de elementos semánticos</h2>
+    <p>
+        HTML5 introduce elementos semánticos que mejoran la accesibilidad y el SEO. Algunos de estos elementos son:
+    </p>
+    <ul>
+        <li><code>&lt;header&gt;</code>: Representa el encabezado de la página o una sección.</li>
+        <li><code>&lt;nav&gt;</code>: Define la sección de navegación.</li>
+        <li><code>&lt;main&gt;</code>: Indica el contenido principal de la página.</li>
+        <li><code>&lt;footer&gt;</code>: Representa el pie de página de un documento o sección.</li>
+        <li><code>&lt;section&gt;</code>: Define secciones dentro del documento, cada una con su propio encabezado.</li>
+        <li><code>&lt;article&gt;</code>: Contiene contenido independiente que puede distribuirse de forma autónoma.</li>
+        <li><code>&lt;aside&gt;</code>: Representa contenido relacionado que no forma parte del contenido principal.</li>
+    </ul>
+
+    <h2>6. Ejemplo de Estructura Completa</h2>
+    <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Título de la Página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="estilo.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#seccion1"&gt;Sección 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#seccion2"&gt;Sección 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section id="seccion1"&gt;
+            &lt;h2&gt;Título de Sección 1&lt;/h2&gt;
+            &lt;p&gt;Contenido de la sección 1.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section id="seccion2"&gt;
+            &lt;h2&gt;Título de Sección 2&lt;/h2&gt;
+            &lt;p&gt;Contenido de la sección 2.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 Mi Página Web&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+    </pre>
+
+    <h2>7. Buenas Prácticas</h2>
+    <p>
+        Al estructurar un documento HTML, es importante seguir buenas prácticas, como:
+    </p>
+    <ul>
+        <li>Utilizar etiquetas semánticas adecuadas para mejorar la accesibilidad.</li>
+        <li>Minimizar el uso de etiquetas <code>&lt;div&gt;</code> en favor de elementos semánticos.</li>
+        <li>Asegurarse de que el contenido sea accesible en dispositivos móviles mediante el uso de la meta etiqueta viewport.</li>
+        <li>Comprobar la validez del HTML utilizando herramientas de validación para evitar errores de marcado.</li>
+    </ul>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

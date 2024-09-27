@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para justificar el texto */
+        .justificado {
+            text-align: justify;
+        }
+        body {
+            background-color: #ffffffc7; /* Fondo blanco */
+            color: #343A40; /* Texto gris oscuro */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="base.html">Programación web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="introduccion.html">Introducción</a>
+                        </li>
+                        <!-- Dropdown para "Temas" -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Temas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="2.2.html">2.2 Estructura de un documento</a></li>
+                                <li><a class="dropdown-item" href="2.3.html">2.3 Elementos basicos</a></li>
+                                <li><a class="dropdown-item" href="2.4.html">2.4 Formularios</a></li>
+                                <li><a class="dropdown-item" href="2.5.html">2.5 Lenguajes de presentación en
+                                    documentos Web</a></li>
+                                <li><a class="dropdown-item " href="2.6.html">2.6 Selectores</a></li> 
+                                <li><a class="dropdown-item " href="2.7.html">2.7 Metodologia</a></li> 
+                                <!-- Divider para separar secciones dentro del dropdown -->
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="HTML.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="CSS.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="JS.html">JS</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="glosario.html">Glosario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="frameworks.html">Frameworks y Herramientas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <main class="container mt-3">
+        <h1 class="text-center">2.1 Introducción</h1>
+      
+
+        <section class="mt-4 justificado">
+            <h2>1. ¿Qué es HTML?</h2>
+            <h5>Definición:</h5>
+            <p>HTML (Hypertext Markup Language) es el lenguaje de marcado utilizado para crear la estructura de páginas web. Se basa en una serie de elementos que se utilizan para definir el contenido y la presentación de la información.</p>
+            <h5>Características:</h5>
+            <ul>
+                <li>Es un lenguaje de marcado, lo que significa que utiliza etiquetas para describir la estructura de un documento.</li>
+                <li>Es interpretado por los navegadores web, que renderizan el contenido para que los usuarios puedan interactuar con él.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5 justificado">
+            <h2>2. ¿Qué es XML?</h2>
+            <h5>Definición:</h5>
+            <p>XML (eXtensible Markup Language) es un lenguaje de marcado que permite almacenar y transportar datos de forma estructurada. Se diseñó para ser tanto legible por humanos como por máquinas.</p>
+            <h5>Características:</h5>
+            <ul>
+                <li>Es extensible, lo que significa que los usuarios pueden definir sus propias etiquetas.</li>
+                <li>Es utilizado comúnmente para el intercambio de datos entre diferentes sistemas y aplicaciones.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5 justificado">
+            <h2>3. ¿Qué es CSS?</h2>
+            <h5>Definición:</h5>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilo que se utiliza para describir la presentación de un documento HTML. Permite separar el contenido de la presentación, lo que mejora la mantenibilidad y la accesibilidad.</p>
+            <h5>Características:</h5>
+            <ul>
+                <li>Permite controlar el diseño de múltiples páginas a la vez mediante la vinculación de un solo archivo CSS.</li>
+                <li>Incluye propiedades para definir colores, fuentes, márgenes, espacios y otros aspectos visuales.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5 justificado">
+            <h2>4. Importancia de HTML, XML y CSS en el Desarrollo Web</h2>
+            <h5>HTML:</h5>
+            <ul>
+                <li>Es fundamental para la creación de la estructura de un sitio web. Sin HTML, no se podría mostrar contenido en la web.</li>
+                <li>Permite organizar la información de manera jerárquica y lógica, facilitando la navegación y la accesibilidad.</li>
+            </ul>
+
+            <h5>XML:</h5>
+            <ul>
+                <li>Se utiliza principalmente para el almacenamiento y transporte de datos, permitiendo que diferentes sistemas puedan intercambiar información de manera efectiva.</li>
+                <li>Es esencial en aplicaciones que requieren compartir datos, como APIs (Interfaz de Programación de Aplicaciones) y servicios web.</li>
+            </ul>
+
+            <h5>CSS:</h5>
+            <ul>
+                <li>Mejora la apariencia visual de los sitios web, lo que es crucial para la experiencia del usuario.</li>
+                <li>Permite crear diseños responsivos que se adaptan a diferentes dispositivos y tamaños de pantalla, mejorando la accesibilidad y la usabilidad.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5 justificado">
+            <h2>5. Relación entre HTML, XML y CSS</h2>
+            <ul>
+                <li><strong>HTML y CSS:</strong> HTML se utiliza para estructurar el contenido, mientras que CSS se usa para estilizarlo. Esto permite que los desarrolladores se enfoquen en la lógica y la estructura (HTML) y luego en la presentación (CSS).</li>
+                <li><strong>HTML y XML:</strong> HTML es un lenguaje de marcado que tiene un conjunto fijo de etiquetas, mientras que XML permite a los usuarios definir sus propias etiquetas. XML puede ser utilizado para crear datos estructurados que luego se pueden presentar utilizando HTML.</li>
+                <li><strong>CSS y XML:</strong> Aunque CSS se utiliza principalmente con HTML, también puede aplicarse a documentos XML para definir su estilo. Esto es útil cuando se desea presentar datos XML de manera legible y atractiva en la web.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5 justificado">
+            <h2>6. Evolución y Futuro</h2>
+            <h5>HTML:</h5>
+            <p>Ha evolucionado desde HTML 1.0 hasta HTML5, que incluye nuevas características como soporte para multimedia (audio y video), gráficos en 2D y 3D, y APIs para aplicaciones web.</p>
+
+            <h5>XML:</h5>
+            <p>A pesar de que su popularidad ha disminuido en algunos ámbitos, sigue siendo ampliamente utilizado en aplicaciones donde se requiere un formato de datos estructurado.</p>
+
+            <h5>CSS:</h5>
+            <p>Continúa evolucionando con nuevas características como CSS Grid y Flexbox, que facilitan la creación de diseños complejos y responsivos.</p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
